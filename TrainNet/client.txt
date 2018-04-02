@@ -1,0 +1,47 @@
+# debug level, should be 0 in production
+verbosity 0
+
+# close console window after starting
+detached false
+		
+# Operate in client mode
+server false	
+
+# Accept both TCP and UDP
+type both
+
+# port to use for the tunnel
+useport 443
+
+# which adapter to use (specify IP)
+# useaddress 62.90.87.41
+
+# compression level, 0 to disable
+compress zlib:0
+
+# encryption strength, 0 to disable
+encrypt 0
+
+# log messages to a local file.
+
+# logfile 'c:\tserver.log'
+
+# tunnel server address/host name
+host 62.90.87.40
+
+# proxy configuration
+# proxy www.proxy.com:8080
+
+# forward VNC traffic to a 3rd computer running VNC server
+# tunnel 5900:hostname:5900
+
+# forward HTTP traffic to the same computer running tunnel server
+#tunnel 11111:225.0.0.10:11111
+
+tunnel 6667:localhost:6667
+tunnel 80:localhost:80
+tunnel 4004:localhost:4004
+tunnel 4114:localhost:4114
+tunnel 443:localhost:443/UDP
+tunnel 7002:localhost:7002
+tunnel 5055:localhost:5055
